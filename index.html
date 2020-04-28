@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Saylani Walfare</title>
+<link rel="stylesheet" type="styles.css" href="">
+</head>
+<style type="text/css">
+	
+body{
+
+	background-color: black;
+
+}
+tr,td,table{
+	color: #C0C0C0;
+	
+
+}
+h1{
+	color: #316DC3;
+	text-decoration: underline;
+}
+
+.txt{
+  
+  box-sizing: border-box;
+  border: 1px solid #C0C0C0;
+  outline: none;
+  background-color: black;
+  padding: 6px;
+  margin-top: 12px;
+  margin-left: 20px;
+
+  }
+
+::placeholder{
+	color:  #C0C0C0; 
+}
+
+.sp{
+	line-height: 20px;
+}
+.t{
+	
+	margin-left: 20px;
+	font-size: 18px;
+	
+}
+#t{
+	margin-top: 12px;
+
+}
+#b{
+	background-color: black;
+	box-sizing: border-box;
+  border: 1px solid #C0C0C0;
+  outline: none;
+  padding: 6px;
+
+}
+#button {
+  background-color: black; 
+  border: none;
+  color: #C0C0C0;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: 2px solid #C0C0C0;
+}
+</style>
+
+<body>
+	<header>
+		<img src="img/s.png">
+	</header>
+	<h1>STUDENT REGISTRATION FORM</h1>
+
+	<form action="submit.html" method="post">
+		<table>
+			<tr>
+				<td>FIRST NAME :</td>
+				<td><input type="text" placeholder="Enter First Name" maxlength="30" name="fname" class="txt"  />
+				&nbsp(max 30 characters a-z and A_Z)</td>
+			</tr>
+
+			<tr>
+				<td> LAST NAME :</td>
+				<td><input type="text" placeholder="Enter Last Name" maxlength="30" name="lname" class="txt" />
+				&nbsp(max 30 characters a-z and A_Z)</td>
+			</tr>
+
+			<tr>
+				<td>BIRTH OF DATE :</td>
+				<td>
+					<select class="txt" style="color: #C0C0C0 ">
+						<option>Day</option>
+					</select>
+					<select  class="txt" style="color: #C0C0C0" >
+						<option>Month</option>
+					</select>
+					<select class="txt" style="color: #C0C0C0">
+						<option>Year</option>
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td>ADDRESS :</td>
+				<td>
+					<textarea class="txt" cols="30" rows="4"></textarea>
+				</td>
+			</tr>
+
+			<tr>
+				<td>EMAIL ID :</td>
+				<td><input type="email" placeholder="Enter Email Address" name="mail" class="txt"></td>
+			</tr>
+
+			<tr>
+				<td>MOBILE NO :</td>
+				<td><input type="text" placeholder="Enter Mobile No" maxlength="10" name=mobno" class="txt">&nbsp(10 digit number)</td>
+			</tr>
+
+			<tr>
+				<td>GENDER :</td>
+				<td>
+					<span class="t">Male <input type="radio" name="gender" id="t" /></span>
+					<span class="t">Female <input type="radio" name="gender" id="t" /></span>
+				</td>
+			</tr>
+
+
+			<tr>
+				<td>CITY :</td>
+				<td><input type="text" placeholder="Enter City" maxlength="30" name="city" class="txt">&nbsp(max 30 characters a-z and A_Z)</td>
+			</tr>
+
+			<tr>
+				<td>PIN CODE :</td>
+				<td><input type="text" placeholder="Enter Pin Code" maxlength="6" name="pcode" class="txt">&nbsp(6 digit number)</td>
+			</tr>
+
+			<tr>
+				<td>STATE :</td>
+				<td><input type="text" placeholder="Enter State" maxlength="30" name="state" class="txt">&nbsp(max 30 characters a-z and A_Z)</td>
+			</tr>
+
+			<tr>
+				<td>COUNTRY :</td>
+				<td><input type="text" placeholder="Enter Country" name="country" class="txt"></td>
+			</tr>
+
+			<tr>
+				<td>HOBBIES :</td>
+				<td>
+					Drawing<input type="checkbox" name="dra" class="txt" />
+					Singing<input type="checkbox" name="sin" class="txt" />
+					Dancing<input type="checkbox" name="dan" class="txt" />
+					Stetching<input type="checkbox" name="ste" class="txt" />
+					<br>
+					Other<input type="checkbox" name="other" class="txt">
+					<input type="text" name="other" class="txt">
+				</td>
+			</tr>
+			<br>
+
+
+
+			<label>
+        <table style="margin-left: 125px; color: #C0C0C0">
+          <tr>
+          	QUALIFICATION :
+            <th >S.No.</th>
+            <th>Examination</th>
+            <th style="text-align: center;">Board</th>
+            <th style="text-align: center;">Percentage</th>
+            <th style="text-align: center;">Year of passing</th>
+          </tr>
+          <tr>
+            <th>1</th>
+            <th>Class X</th>
+            <td>
+              <input type="text" maxlength="10" id="b" >
+            </td>
+            <td>
+              <input type="text" name="" id="b">
+            </td>
+            <td><input type="text" id="b"></td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <th>Class XII</th>
+            <td>
+              <input type="text" maxlength="10" id="b">
+            </td>
+            <td>
+              <input type="text" name="" id="b">
+            </td>
+            <td><input type="text" id="b"></td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <th>Graduation</th>
+            <td>
+              <input type="text" maxlength="10" id="b">
+            </td>
+            <td>
+              <input type="text" name="" id="b">
+            </td>
+            <td><input type="text" id="b"></td>
+          </tr>
+          <tr>
+            <th>4</th>
+            <th>Masters</th>
+            <td>
+              <input type="text" maxlength="10" id="b">
+            </td>
+            <td>
+              <input type="text" name="" id="b">
+            </td>
+            <td><input type="text" id="b"></td>
+            
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td style="text-align: center;"> (10 char max)</td>
+            <td style="text-align: center;"> (upto 2 decimal)</td>
+            <td></td>
+          </tr>
+        </table>
+        </label>
+      <p style="color:#C0C0C0 ">COURSE <br>
+      APPLIED FOR :
+      <label style="margin-left: 55px;" for="">
+        <label style="margin-left: 20px;" for="bca">BCA</label>
+        <input type="radio" name="Course" value="BCA" id="bca">
+        <label style="margin-left: 20px;" for="bcom">B.Com</label>
+        <input type="radio" name="Course" value="B.com" id="bcom">
+        <label style="margin-left: 20px;" for="bsc">B.Sc</label>
+        <input type="radio" name="Course" value="B.Sc" id="bsc">
+        <label style="margin-left: 20px;" for="ba">B.A</label>
+        <input type="radio" name="Course" value="B.A" id="ba">
+      </label>
+    </p>
+    <center>
+<div >
+    <input type="reset" id="button">
+    <input type="submit" id="button">
+  </div>
+		</center>	
+</table>
+	</form>
+
+
+
+</body>
+</html>
